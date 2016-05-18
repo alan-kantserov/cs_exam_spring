@@ -10,12 +10,29 @@ public class Technology{
     
   public void speak(){
     System.out.println("Bleep, blip.  I am a " + name);}
+  
+  public class Smartphone extends Technology {
+
+    int number;
+    
+    public Smartphone(String name, int number){
+      super(name);
+      this.number = number;
+   }
+    
+    public static void speak() {
+        System.out.println("Name is "+ name + " number is " + number);
+    }
+}
     
 ---------------------------------------------------------    
 
 a)  Write a subclass to Technology with a class called Smartphone.
     Add an additional integer field called number.
-    Include a constructor for Technology that takes the "name" and "number" as parameters.
-b)  Explain what POLYMORPHISM is.
+    Include a constructor for Smartphone that takes the "name" and "number" as parameters.
+b)  Explain what INHERITANCE is.
+    Inheritance allows a class to use (inherit) the methods and porperties of another class.
 c)  Write a "speak" method for Smartphone that states the "name" and "number".  
 d)  What is this called when we write a subclass method which overrides a super class method?
+    Overriding - subclass can implement parent class
+    
